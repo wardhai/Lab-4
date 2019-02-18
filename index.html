@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ITMD-361 Lab 4 Form</title>
+</head>
+<body>
+
+<h1><strong> Volunteer Form </strong></h1>
+<form method= "POST" autocomplete"on" action= "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
+<fieldset> 
+
+<p><strong>My Info</strong></p>
+<p>
+<label>First Name: <input type= "text" name="first_name_field"></label>
+</p>
+<p>
+<label>Last Name: <input type= "text" name="last_name_field"></label>
+</p>
+<p>
+<label>Phone Number: <input type= "text" name="phone_field"></label>
+</p>
+<p>
+<label>Email Address: <input type= "text" name="email_field"></label>
+</p>
+<p>
+	Gender:
+	<label>Male <input type="radio" name="gender_field" value= "M"></label>
+	<label>Female <input type="radio" name="gender_field" value= "F"></label>
+	</p>
+	<p>
+		Age:
+		<select name="age_field">
+		<option value="under 18">under 18</option>
+		<option value="18-24">18-24</option>
+		<option value="25-34">25-34</option>
+		<option value="35-44">35-44</option>
+		<option value="45-54">45-54</option>
+		<option value="55-64">55-64</option>
+		<option value="65 +">65 +</option>
+		</select>
+		</p>
+		</fieldset>
+		<fieldset>
+		<p><strong>My Availability</strong></p>
+		<div>
+		Days Available:
+		</div>
+		<div>
+		<label><input type="checkbox" name="available_field[]" value= "Sunday">Sunday</label>
+		</div>
+		<div>
+		<label><input type="checkbox" name="available_field[]" value="Monday">Monday </label>
+		</div>
+		<div>
+		<label><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday </label>
+		</div>
+		<div>
+		<label><input type="checkbox"  name="available_field[]" value="Wednesday">Wednesday</label>
+		</div>
+		<div>
+		<label><input type="checkbox"  name="available_field[]" value="Thursday">Thursday</label>
+		</div>
+		<div>
+		<label><input type="checkbox" name="available_field[]" value="Friday">Friday </label>
+		</div>
+		<div>
+		<label><input type="checkbox" name="available_field[]" value="Saturday">Saturday</label>
+		</div>
+		<p>
+		<label for="the_textarea">Any Comments? </label>
+		  <textarea cols="50" rows="4" name="comments_field" placeholder="Enter text" id="the_textarea"></textarea>
+      </p>  
+      <p>
+        <input type="hidden" name="hidden_field" value="Wardha Iftikhar">
+      </p>
+    </fieldset>
+    <input type="submit">
+  </form>
+</body>
+</html>
+		
